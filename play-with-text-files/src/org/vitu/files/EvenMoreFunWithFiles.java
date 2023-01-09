@@ -45,13 +45,15 @@ public class EvenMoreFunWithFiles {
 			e.printStackTrace();
 		} finally {
 			System.out.println("Le finally est bien éxecuté");
-		}		
+		}
+		
+		System.out.println("Nous continuons le code après le bloc try / catch");
 	}
 	
 	// Permet de lancer une exception au sein du bloc try
-	public static String getInformation(boolean error) {
+	public static String getInformation(boolean error) throws IOException {
 		if (error) {
-			throw new NullPointerException();
+			throw new IOException("Erreur générée");
 		} else {
 			return "Une information";
 		}
