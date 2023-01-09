@@ -40,7 +40,12 @@ public class FunWithFiles {
 		System.out.println("Name de canonical : " + canonical.getName());
 		System.out.println("Parent de canonical : " + canonical.getParent());
 		System.out.println("Path de canonical : " + canonical.getPath());
-		System.out.println("Canonical de canonical : " + canonical.getCanonicalPath());
+		System.out.println("Canonical de canonical : " + canonical.getCanonicalPath()); // Il essaye de résoudre le chemin donné avec les informations qu'il à
+		
+		// Répertoire courant
+		File currentDirectory = new File(".");
+		System.out.println("Répertoire courant = " + currentDirectory);
+		System.out.println("Répertoire courant = " + currentDirectory.getCanonicalPath());
 	}
 
 }
