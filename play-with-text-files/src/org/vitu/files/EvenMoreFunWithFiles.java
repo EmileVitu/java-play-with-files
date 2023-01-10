@@ -46,10 +46,8 @@ public class EvenMoreFunWithFiles {
 		} finally {
 			System.out.println("Le finally est bien éxecuté");
 		}
-		
 		System.out.println("Nous continuons le code après le bloc try / catch");
 	}
-	
 	// Permet de lancer une exception au sein du bloc try
 	public static String getInformation(boolean error) throws IOException {
 		if (error) {
@@ -58,5 +56,4 @@ public class EvenMoreFunWithFiles {
 			return "Une information";
 		}
 	}
-	
 }
