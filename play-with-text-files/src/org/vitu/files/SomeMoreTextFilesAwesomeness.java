@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
 
-public class SomeMoreTextFiesAwesomeness {
+public class SomeMoreTextFilesAwesomeness {
 
 	public static void main(String[] args) {
 		
